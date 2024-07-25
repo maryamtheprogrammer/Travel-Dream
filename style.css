@@ -1,0 +1,917 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+@media (max-width: 1024px){
+    html, body{
+        overflow: hidden !important;
+    }
+
+    .top-nav{
+        padding: 5px;
+       text-align: center;
+       align-items: center;
+       gap: 100px;
+    }
+
+    .topRight-nav{
+        margin-left: -20em;
+    }
+
+    .topLeft-nav a, .topRight-nav a{
+        font-size: 12px;
+    }
+
+    .navbar{
+        padding: 5px;
+    }
+
+    .logo h1{
+        font-size: 22px;
+    }
+
+    .navContent ul li{
+        font-size: 12px;
+    }
+
+    .navContent ul{
+        margin-left: -40em;
+    }
+
+    main{
+        padding: 10px;
+        margin-top: 0;
+        margin-left: -10em;
+        width: 100%;
+        min-height: 100vh;
+    }
+
+    .bestCards{
+        margin-left: -6em;
+    }
+
+    .besTcard{
+        width: 250px;
+        height: 200px;
+    }
+
+    .inputs{
+        flex-wrap: wrap;
+        width: 250px;
+        margin-left: -3.5em;
+        margin-top: -10em;
+    }
+
+    .inputs form input{
+        width: 100px;
+    }
+
+    .inputs form button{
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .best-destination{
+        min-height: 150vh;
+    }
+
+
+    .destinations{
+        margin-left: -2em;
+    }
+
+    .top-destination .desti img{
+        height: 400px;
+    }
+
+    .discountSec{
+        min-height: 500px;
+    }
+
+    .features{
+       min-height: 180vh;
+    }
+
+    .packages{
+        margin-left: -6em;
+        transform: scale(0.8);
+    }
+
+    .client{
+        min-height: 365px;
+        margin-left: -5em;
+        transform: scale(0.8);
+    }
+
+    .blogs{
+        min-height: 100vh;
+    }
+
+    .blogCards{
+        margin-right: 2em;
+    }
+
+    .subscribe .right input{
+         margin-left: -2em;
+    }
+
+    footer{
+        min-height: 350px;
+    }
+}
+
+@media (max-width: 375px){
+    .topLeft-nav, .topRight-nav, header .container hr, .navContent{
+        display: none;
+    }
+
+    .menu-toggle i{
+        display: inline;
+        color: #0376C1;
+        font-size: 40px;
+        
+    }
+
+}
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #0376C1;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #045083;
+  }
+
+h1, h2, h3, h4, h5, h6{
+    font-weight: 700;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.top-nav{
+    display: flex;
+    padding: 10px;
+    gap: 500px;
+}
+
+
+.topLeft-nav a, .topRight-nav a{
+    margin: 5px;
+    text-decoration: none;
+    font-family: 'Noto Serif', serif;
+    color: grey;
+}
+
+.navbar{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+   background-color: #FFFFFF;
+   position: fixed;
+   left: 0;
+   width: 100%;
+   z-index: 1000;
+}
+
+
+.logo{
+    cursor: default;
+}
+
+.logo span{
+    color: #0376C1;
+}
+
+.navContent ul{
+    display: flex;
+    list-style-type: none;
+    gap: 15px;
+}
+
+.navContent ul li{
+    font-family: 'Noto Serif', serif;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.navContent ul li.active{
+    color: #0376C1;
+}
+
+.navContent ul li:hover{
+    color: #0376C1;
+    transition: .3s ease;
+}
+
+.menu-toggle{
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+main{
+    background: url(img/background.webp) no-repeat center/cover;
+    height: 80vh;
+    width: 100%;
+    padding: 200px;
+    padding-top: 150px;
+}
+
+main h1{
+    color: #fff;
+    font-size: 45px;
+}
+
+main h1 span{
+    font-size: 55px;
+    line-height: 0.1em;
+}
+
+main h2{
+    font-family: 'Noto Serif', serif;
+    color: #fff;
+    font-size: 30px;
+    margin-top: 0.7em;
+}
+
+.inputs{
+    margin-top: 100px;
+    width: 59.5rem;
+}
+
+form{
+    gap: 50px;
+  padding: 10px;
+  width: 100%;
+}
+
+form label{
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    position: absolute;
+    z-index: 1;
+    margin-left: 1em;
+    height: 40px;
+}
+
+
+form input{
+    height: 40px;
+    padding: 10px;
+    padding-left: 20px;
+    border: none;
+    outline: none;
+    width: 180px;
+    margin-bottom: 1em;
+    position: relative;
+    margin-left: 3em;
+    font-family: 'Noto Serif', serif;
+}
+
+.first-input{
+    width: 440px;
+}
+
+.inputs form button{
+    position: absolute;
+    margin-left: 4em;
+    width: 200px;
+    padding: 10px;
+    background-color: #0376C1;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.inputs form button a{
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Noto Serif', serif;
+    letter-spacing: 3px;
+}
+
+.best-destination{
+    height: 120vh;
+    width: 100%;
+    background-color: #FBF7F6;
+    padding: 100px;
+}
+
+.bestCards{
+    display: flex;
+    gap: 25px;
+}
+
+.besTcard{
+    background-color: #fff;
+    padding: 20px;
+    width: 550px;
+}
+
+.besTcard img{
+    position: absolute;
+    margin-top: 2em;
+}
+
+.besTcard h3, .besTcard p{
+    position: relative;
+    margin-left: 4em;
+}
+
+.besTcard:hover{
+    cursor: pointer;
+    box-shadow: 0 0 20px #e0e0e0;
+    transition: .3s ease;
+}
+
+.top-destination{
+    margin-top: 10em;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.desti-head h2{
+    font-size: 35px;
+}
+
+.destinations{
+    display: flex;
+    margin-top: 2em;
+    gap: 10px;
+}
+
+.desti img{
+    height: 500px;
+}
+
+.desti h3{
+    position: absolute;
+    margin-top: -12em;
+    margin-left: 4em;
+    color: #fff;
+    text-align: center;
+    font-size: 25px;
+}
+
+.discountSec{
+    background: url(img/counter-bg.jpg) no-repeat center/cover;
+    height: 50vh;
+    width: 100%;
+    padding: 50px;
+    padding-top: 60px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.discount-text h2, .discount-text h3{
+    color: #fff;
+    font-family: 'Noto Serif', serif;
+}
+
+.discount-text h2{
+    font-size: 35px;
+}
+
+.discount-text h3{
+    font-size: 29px;
+}
+
+.timer{
+    display: flex;
+    justify-content: center;
+    margin-top: 4em;
+    color: #fff;
+    gap: 30px;
+}
+
+.timer .col label, .timer .col h1{
+    font-family: 'Noto Serif', serif;
+}
+
+.timer .col h1{
+    border: 2px solid #fff;
+    padding: 20px;
+    width: 100px;
+    font-size: 45px;
+    border-radius: 50%;
+}
+
+.discountSec button{
+    background-color: #000;
+    border: 2px solid #000;
+    color: #fff;
+    padding: 10px;
+    width: 100px;
+    border: none;
+    outline: none;
+    font-family: 'Noto Serif', serif;
+    font-size: 18px;
+    margin-top: 2em;
+    cursor: pointer;
+}
+
+.discountSec button:hover{
+    border: 1px solid #000;
+    background: transparent;
+    transition: .3s ease;
+}
+
+.features{
+    background-color: #FBF7F6;
+    height: 150vh;
+    width: 100%;
+    padding: 60px;
+}
+
+.feaHead{
+    text-align: center;
+}
+
+.feaHead h2{
+    font-size: 36px;
+}
+
+.feaHead p{
+    color: grey;
+    font-family: 'Noto Serif', serif;
+}
+
+.packages{
+    margin-top: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.package{
+    width: 350px;
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: 0 0 10px #e0e0e0;
+}
+
+.package img{
+    height: 250px;
+    width: 100%;
+}
+
+.price-btn{
+    margin-top: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.package p, .price-btn h2, .price-btn button{
+    font-family: 'Noto Serif', serif;
+}
+
+.package p{
+    font-size: 14px;
+    color: grey;
+}
+
+.price-btn h2{
+    color: #0376C1;
+    font-size: 28px;
+}
+
+.price-btn button{
+    background-color: #0376C1;
+    padding: 10px;
+    width: 90px;
+    border: none;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.package:hover{
+    box-shadow: 0 0 20px #e0e0e0;
+    transition: .3s ease;
+}
+
+.package:hover .price-btn button{
+    background-color: #045083;
+    transition: .3s ease;
+}
+
+.customer-reviews{
+    margin-top: 120px;
+    justify-content: center;
+    align-items: center;
+}
+
+.clientHead{
+    text-align: center;
+}
+
+.clientHead h2{
+    font-size: 36px;
+}
+
+.clientHead p{
+    color: grey;
+    font-family: 'Noto Serif', serif;
+}
+
+.clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 3em;
+}
+
+.client{
+    width: 500px;
+    height: 350px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px #e0e0e0;
+    text-align: center;
+}
+
+.client-img img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.comma p{
+    color: #0376C1;
+    font-size: 35px;
+    font-weight: 700;
+    font-family: 'Noto Serif', serif;
+}
+
+.review p{
+    font-family: 'Noto Serif', serif;
+    line-height: 1.5em;
+    font-size: 14px;
+}
+
+.username-country{
+    margin-top: 2em;
+}
+
+.username-country h3{
+    font-weight: 500;
+}
+
+.username-country h4{
+    font-family: 'Noto Serif', serif;
+    font-weight: normal;
+    color: grey;
+}
+
+.client:hover{
+    box-shadow: 0 0 25px #e0e0e0;
+    transition: all .3s ease;
+}
+
+ .circles{
+    margin-left: 48%;
+    margin-top: 3em;
+    gap: 10px;
+}
+
+ .circles i{
+    color: #e0e0e0;
+}
+
+ .circles .active{
+    color: #0376C1;
+}
+
+.special{
+    display: flex;
+    height: 600px;
+    width: 100%
+}
+
+.box-text{
+    padding: 50px;
+    padding-top: 200px;
+    padding-left: 10%;
+    height: 600px;
+    width: 50%;
+    background-color: #0376C1;
+    color: #fff;
+    text-align: left;
+    align-items: center;
+}
+
+.box-offer{
+    width: 50%;
+    background: url(img/airplane.avif);
+    height: 600px;
+    padding: 80px;
+}
+
+.box-text h3{
+    font-size: 50px;
+    font-weight: normal;
+    font-family: 'Noto Serif', serif;
+}
+
+.box-text h2{
+    font-size: 60px;
+}
+
+.box-offer{
+    color: #fff;
+}
+
+.offer-text h2{
+    font-family: 'Noto Serif', serif;
+    font-weight: normal;
+    letter-spacing: 4px;
+}
+
+.offer-text h1{
+    font-size: 50px;
+    font-family: 'Noto Serif', serif;
+    font-weight: 500;
+}
+
+.offer-text h1 span{
+    background-color: orange;
+    width: 120px;
+    padding: 2px;
+    font-size: 30px;
+}
+
+.facilities{
+    margin-top: 3em;
+}
+
+.lists{
+    display: flex;
+
+}
+
+.facilities .lists ul {
+    list-style-type: none;
+    height: 120px;
+    width: 500px;
+}
+
+
+.lists ul li{
+    font-family: 'Noto Serif', serif;
+}
+
+.special p{
+    font-family: 'Noto Serif', serif;
+}
+
+.price-review{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1em;
+}
+
+.stars{
+    display: flex;
+}
+
+.price-review h1{
+    font-family: 'Noto Serif', serif;
+    font-weight: normal;
+    font-size: 35px;
+}
+
+.price-review h1 s{
+    font-size: 25px;
+}
+
+.stars i{
+    color: gold;
+}
+
+.btns{
+    margin-top: 2em;
+}
+
+.btns .book{
+    font-family: 'Noto Serif', serif;
+    background-color: #0376C1;
+    padding: 10px;
+    width: 90px;
+    border: 2px solid #0376C1;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btns .read{
+    font-family: 'Noto Serif', serif;
+    background: transparent;
+    padding: 10px;
+    width: 100px;
+    border: 2px solid #fff;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.book:hover{
+    background: transparent;
+    border: 2px solid #fff;
+    transition: .3s ease;
+}
+
+.read:hover{
+    background-color: #0376C1;
+    border: 2px solid #0376C1;
+    transition: .3s ease;
+}
+
+.blogs{
+    padding: 50px;
+    background-color: #FBF7F6;
+    width: 100%;
+    height: 80vh;
+}
+
+.blog-text{
+    text-align: center;
+}
+
+.blog-text h2{
+    font-size: 36px;
+}
+
+.blog-text p{
+    color: grey;
+    font-family:'Noto Serif', serif;
+}
+
+.blogCards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+    gap: 10px;
+}
+
+.blog {
+    width: 300px;
+    height: 440px;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.blog > img{
+    height: 250px;
+    width: 250px;
+}
+
+.date p{
+    color: grey;
+    font-size: 12px;
+}
+
+.title{
+    margin-top: 1em;
+}
+
+.title h3{
+    font-size: 16px;
+}
+
+.title p{
+    font-size: 12px;
+    font-family:'Noto Serif', serif;
+    color: grey;
+}
+
+.read-btn{
+    margin-top: 1em;
+}
+
+.read-btn button{
+    padding: 10px;
+    background: transparent;
+    border: none;
+    color: #0376C1;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.read-btn button:hover{
+    background-color: #0376C1;
+    color: #fff;
+    transition: .4s ease;
+}
+
+.subscribe{
+    background-color: #002954;
+    padding: 100px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 350px;
+    color: #fff;
+    display: flex;
+    gap: 50px;
+}
+
+.left h1{
+    font-weight: normal;
+    font-family: 'Noto Serif', serif;
+    font-size: 38px;
+}
+
+.right h3{
+    font-weight: normal;
+    font-family: 'Noto Serif', serif;
+    font-size: 18px;
+    color: rgb(219, 217, 217);
+}
+
+.right form input{
+    width: 260px;
+    font-size: 12px;
+    font-family: 'Noto Serif', serif;
+}
+
+.right form button{
+    background-color: #000;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    font-family: 'Noto Serif', serif;
+    margin-left: -1em;
+    position: absolute;
+    height: 40px;
+}
+
+footer{
+    background-color: #FAF8F4;
+    width: 100%;
+    height: 300px;
+    padding: 50px;
+}
+
+footer .container{
+    display: flex;
+    width: 100%;
+    gap: 50px;
+}
+
+footer .container ul{
+    list-style-type: none;
+    width: 250px;
+    line-height: 1.6em;
+}
+
+footer .container ul li{
+    font-family: 'Noto Serif', serif;
+    font-size: 14px;
+}
+
+footer .container ul li:hover{
+    cursor: pointer;
+    transition: .2s;
+}
+
+footer .container .fa-brands{
+    color: grey;
+    font-size: 20px;
+    margin-top: 1em;
+    cursor: pointer;
+}
+
+
+
